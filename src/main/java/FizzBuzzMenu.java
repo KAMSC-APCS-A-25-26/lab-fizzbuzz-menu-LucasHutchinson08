@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class FizzBuzzMenu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        boolean run = true;
         while(run) {
             System.out.println("---FizzBuzz Menu---");
             System.out.println("1. Fizz (Multiples of 3)");
@@ -28,16 +29,18 @@ public class FizzBuzzMenu {
                 case 2:
                     for(int i = 1; i < 100; i++) {
                         if (i % 5 == 0) {
-                            System.out.print(i);
+                            System.out.print(i + " ");
                         }
                     }
+                    System.out.println(" ");
                 break;
                 case 3:
                     for(int i = 1; i < 100; i++) {
                         if(i % 5 == 0 && i % 3 ==0) {
-                            System.out.print(i );
+                            System.out.print(i + " " );
                         }
                     }
+                    System.out.println(" ");
                 break;
                 case 4:
                     run = false;
